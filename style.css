@@ -1,0 +1,89 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+.attribution {
+}
+.btn {
+}
+.burger {
+}
+.close {
+}
+.copyright {
+}
+.creation-grid__box {
+}
+.creations-header__btn {
+}
+.creations-header__title {
+}
+.footer {
+}
+.footer-logo {
+}
+.footer-nav__link {
+}
+.footer-social {
+}
+.footer__left {
+}
+.footer__left-logo {
+}
+.footer__left-nav {
+}
+.footer__right {
+}
+.footer__right-copyright {
+}
+.footer__right-social {
+}
+.grid__box-title {
+}
+.header {
+  background-image: url(./images/desktop/image-hero.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.header__title {
+}
+.homelink {
+}
+.leader-info__excerpt {
+}
+.leader-info__title {
+}
+.logo {
+}
+.main {
+}
+.nav {
+}
+.nav--main {
+}
+.nav__link {
+}
+.section {
+}
+.section__creations {
+}
+.section__creations-grid {
+}
+.section__creations-header {
+}
+.section__leader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.section__leader-img {
+}
+.section__leader-info {
+}
+.veil {
+}
