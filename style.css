@@ -9,19 +9,60 @@
 }
 .btn {
 }
+
+.box-one {
+  background-image: url(./images/desktop/image-deep-earth.jpg);
+}
+
+.box-two {
+  background-image: url(./images/desktop/image-night-arcade.jpg);
+}
+
+.box-three {
+  background-image: url(./images/desktop/image-soccer-team.jpg);
+}
+
+.box-four {
+  background-image: url(./images/desktop/image-grid.jpg);
+}
+
+.box-five {
+  background-image: url(./images/desktop/image-from-above.jpg);
+}
+
+.box-six {
+  background-image: url(./images/desktop/image-pocket-borealis.jpg);
+}
+
+.box-seven {
+  background-image: url(./images/desktop/image-curiosity.jpg);
+}
+
+.box-eight {
+  background-image: url(./images/desktop/image-fisheye.jpg);
+}
+
 .burger {
+  display: none;
 }
 .close {
+  display: none;
 }
 .copyright {
 }
 .creation-grid__box {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .creations-header__btn {
 }
 .creations-header__title {
 }
 .footer {
+  background-color: var(--Black);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .footer-logo {
 }
@@ -36,54 +77,177 @@
 .footer__left-nav {
 }
 .footer__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .footer__right-copyright {
+  color: var(--White);
 }
 .footer__right-social {
+  display: flex;
+  align-items: center;
 }
 .grid__box-title {
 }
 .header {
   background-image: url(./images/desktop/image-hero.jpg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  height: 45vh;
+  padding: 4rem 5.5rem 4rem 5.5rem;
 }
+
+.header__up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__up-left {
+}
+
+.header__up-right {
+}
+
+.header__down {
+  display: flex;
+  margin-top: 8rem;
+  margin-down: 8rem;
+}
+
 .header__title {
+  border: solid 1px var(--White);
+  text-transform: uppercase;
+  width: 14ch;
+  color: var(--White);
+  padding: 0rem 0rem 0rem 3rem;
+  font-size: 4.86rem;
+  font-family: "Josefin Sans";
+  font-weight: 100;
 }
 .homelink {
 }
 .leader-info__excerpt {
+  color: var(--Dark-Gray);
+  width: 46ch;
 }
 .leader-info__title {
+  text-transform: uppercase;
+  color: var(--Very-Dark-Gray);
+  font-family: "Josefin Sans";
+  font-size: 48px;
+  width: 22ch;
 }
 .logo {
 }
 .main {
 }
+
 .nav {
+  display: flex;
+  align-items: center;
 }
 .nav--main {
+  display: flex;
+  gap: 3.2rem;
 }
 .nav__link {
+  text-decoration: none;
+  color: var(--White);
 }
 .section {
 }
 .section__creations {
+  padding-left: 5.5rem;
+  padding-right: 5.5rem;
 }
 .section__creations-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  min-height: 600px;
 }
 .section__creations-header {
 }
 .section__leader {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
   align-items: center;
+  padding-left: 5.5rem;
+  padding-right: 5.5rem;
+
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 }
+
+.section__leader-box1 {
+  grid-area: 1 / 1 / span 4 / span 3;
+}
+
+.section__leader-box2 {
+  grid-area: 3 / 3 / span 4 / span 4;
+  background-color: var(--White);
+  z-index: 1;
+  padding: 4rem;
+}
+
 .section__leader-img {
 }
 .section__leader-info {
 }
+
 .veil {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .close {
+    display: inline-block;
+  }
+
+  .burger {
+    display: inline-block;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-height: 100vh;
+    background-color: ;
+    display: block;
+    z-index: 100;
+    padding: ;
+    width: 66vw;
+  }
+
+  .nav--open {
+    transform: translateX(0);
+    pointer-events: all;
+    transition-property: transform;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .veil {
+    display: inline-block;
+    position: fixed;
+    /* background-color: pink; */
+    background: rgba(51, 170, 51, 0.4);
+    opacity: 0.5;
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    height: 100vh;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .veil--open {
+    opacity: 1;
+    z-index: 30;
+  }
 }
