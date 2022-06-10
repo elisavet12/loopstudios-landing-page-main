@@ -8,6 +8,11 @@
 .attribution {
 }
 .btn {
+  text-decoration: none;
+  letter-spacing: 26%;
+  text-transform: uppercase;
+  color: var(--Black);
+  border: none;
 }
 
 .box-one {
@@ -49,37 +54,85 @@
   display: none;
 }
 .copyright {
+  color: var(--Very-Dark-Gray);
 }
 .creation-grid__box {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 447px;
+  display: flex;
+  align-items: flex-end;
+  /* justify-content: center; */
+  padding: 2.6rem;
 }
 .creations-header__btn {
+  border: solid 2px var(--Dark-Gray);
+  background-color: var(--White);
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
+  height: 2.5rem;
 }
 .creations-header__title {
+  font-family: "Josefin Sans";
+  font-size: 48px;
+  text-transform: uppercase;
+  color: var(--Black);
 }
 .footer {
   background-color: var(--Black);
+}
+
+.footer__box {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-left: 5.5rem;
+  padding-right: 5.5rem;
+  padding-top: 2.8rem;
+  padding-bottom: 2.8rem;
 }
 .footer-logo {
 }
 .footer-nav__link {
+  text-decoration: none;
+  color: var(--White);
+  font-size: 12px;
+  font-weight: 400;
 }
 .footer-social {
+  cursor: pointer;
+}
+
+.footer-social :hover {
+  text-decoration: underline;
+  text-decoration-color: var(--White);
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--White);
+  text-decoration-thickness: 0.5px;
 }
 .footer__left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .footer__left-logo {
 }
 .footer__left-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.2rem;
 }
 .footer__right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  gap: 2rem;
+
+  font-size: 12px;
 }
 .footer__right-copyright {
   color: var(--White);
@@ -87,8 +140,14 @@
 .footer__right-social {
   display: flex;
   align-items: center;
+  gap: 2rem;
 }
 .grid__box-title {
+  color: var(--White);
+  font-family: "Josefin Sans";
+  text-transform: uppercase;
+  font-size: 2rem;
+  width: 9ch;
 }
 .header {
   background-image: url(./images/desktop/image-hero.jpg);
@@ -97,7 +156,7 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 45vh;
+  height: 50vh;
   padding: 4rem 5.5rem 4rem 5.5rem;
 }
 
@@ -137,7 +196,7 @@
 }
 .leader-info__title {
   text-transform: uppercase;
-  color: var(--Very-Dark-Gray);
+  color: var(--Black);
   font-family: "Josefin Sans";
   font-size: 48px;
   width: 22ch;
@@ -164,6 +223,7 @@
 .section__creations {
   padding-left: 5.5rem;
   padding-right: 5.5rem;
+  margin-bottom: 12rem;
 }
 .section__creations-grid {
   display: grid;
@@ -171,14 +231,22 @@
   min-height: 600px;
 }
 .section__creations-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 5.6rem;
 }
+
 .section__leader {
   display: grid;
   /* grid-template-columns: 1fr 1fr; */
   align-items: center;
+  justify-items: center;
   padding-left: 5.5rem;
   padding-right: 5.5rem;
-
+  margin-top: 10.6rem;
+  margin-bottom: 10.6rem;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
 }
