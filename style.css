@@ -156,20 +156,23 @@ a:hover {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 50vh;
+  height: 70vh;
   padding: 4rem 5.5rem 4rem 5.5rem;
 }
 
 .header__up {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: inline-block;
+  /* align-items: center;
+  justify-content: space-between; */
 }
 
 .header__up-left {
 }
 
-.header__up-right {
+.header__up--right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__down {
@@ -292,11 +295,22 @@ a:hover {
 }
 
 @media (max-width: 950px) {
+  .creations-header__title {
+    font-size: 42px;
+  }
+
   .header {
     background-image: url(./images/mobile/image-hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 4rem 0.5rem 4rem 0.5rem;
+    height: 50vh;
+  }
+
+  .header__up {
+    display: flex;
+    justify-content: space-between;
   }
 
   .header__down {
@@ -304,14 +318,30 @@ a:hover {
   }
 
   .header__title {
-    font-size: 3.26rem;
+    font-size: 2.26rem;
+  }
+
+  .leader-info__title {
+    font-size: 38px;
+  }
+
+  .leader-info__excerpt {
+    font-size: 20px;
+    width: 30ch;
+  }
+
+  .nav--main {
+    display: none;
   }
 
   .section__leader {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 1fr; */
     padding-left: 0rem;
     padding-right: 0rem;
+    margin-bottom: 5.6rem;
   }
 
   .section__leader-box1 {
@@ -375,7 +405,7 @@ a:hover {
   }
 
   .nav {
-    position: fixed;
+    /* position: fixed;
     top: 0;
     right: 0;
     min-height: 100vh;
@@ -383,11 +413,11 @@ a:hover {
     display: block;
     z-index: 100;
     padding: ;
-    width: 100vw;
-    display: flex;
+    width: 100vw; */
+    /* display: flex;
     flex-direction: column;
     background-color: var(--Black);
-    color: var(--White);
+    color: var(--White); */
   }
 
   .nav--open {
@@ -396,6 +426,23 @@ a:hover {
     transition-property: transform;
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-height: 100vh;
+    background-color: ;
+    display: block;
+    z-index: 100;
+    /* width: 100vw; */
+    width: 100%;
+    padding: 2.5rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Black);
+    color: var(--White);
+    align-items: flex-start;
   }
 
   .veil {
