@@ -339,10 +339,6 @@
     width: 30ch;
   }
 
-  .nav--main {
-    display: none;
-  }
-
   .section__leader {
     display: flex;
     flex-direction: column;
@@ -405,16 +401,20 @@
 }
 
 @media (max-width: 768px) {
+  .burger {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+  }
+
   .close {
     display: inline-block;
     background-color: var(--Black);
     border: none;
   }
 
-  .burger {
-    display: inline-block;
-    background-color: transparent;
-    border: none;
+  .nav--main {
+    display: none;
   }
 
   .nav--open {
